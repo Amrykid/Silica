@@ -1,5 +1,6 @@
 ﻿using Silica.Core.Graphics;
 using System;
+using Windows.Graphics.Display;
 using Windows.UI.Xaml;
 
 namespace Silica.Core
@@ -18,6 +19,7 @@ namespace Silica.Core
         {
             gameCanvas = new GameCanvas();
             window.Content = gameCanvas;
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.LandscapeFlipped | DisplayOrientations.Landscape;
         }
     }
 }
